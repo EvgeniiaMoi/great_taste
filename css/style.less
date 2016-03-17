@@ -1,0 +1,250 @@
+@default_color: #212121;
+@active_color: #D57D39;
+@link_color: #E0BD62;
+@font_family:'Lato', sans-serif;
+@text_color: #B5B5B5;
+body{
+	background: url('../img/back-global.jpg');
+	color: @default_color;
+	font-family: @font_family;
+}
+p{
+	color: @text_color;
+	text-align: center;
+}
+.wrapper-ie{
+	display: none;
+}
+.main-menu{
+	list-style-type: none;
+	font-size: 2rem;
+	li{
+		position: relative;
+		&:after{
+			content: "";
+			width: 0;
+			border-bottom: 1px solid @active_color;
+			position: absolute;
+			transition: width 500ms;
+		}
+		&:hover {
+			&:after{
+				width: 100%;
+			}
+		}
+		a{
+		text-decoration: none;
+		color: @default_color;
+		line-height: 7rem;
+		display: block;
+		&:hover{
+			color: @active_color;
+			}
+		&.active{
+			color: @active_color;
+			border-bottom: 1px solid @active_color;
+		}
+		}
+	}
+}
+.latest-news{
+	padding-left: 20px;
+	color: #B5B5B5;
+	h2{
+		color: #CC9933;
+		border-bottom: 1px solid #CC9933;
+		padding-bottom: 15px;
+	}
+	.panel-default{
+    	border-color: transparent;
+    	.panel-heading{
+    		border-color: #fff;
+    		a{
+    			text-decoration: none;
+    			i{
+    				margin-right: 15px;
+    			}
+    		}
+    	}
+	}
+	.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    	border-top-color: transparent;
+	}
+	.btn-learn-more{
+		border: 1px solid #ccc;
+		border-radius: 0;
+		padding: 5px 30px;
+		font-size: 2rem;
+		font-weight: 300;
+		margin-bottom: 25px;
+		&:hover{
+			border-color: @active_color;
+			transition: border-color 500ms;
+		}
+		a{
+			text-decoration: none;
+			color: #ccc;
+			&:hover{
+				color: @active_color;
+				transition: color 500ms;
+			}
+		}
+	}
+	.benefits p{
+		color: #ccc;
+		text-align: left;
+	}
+}
+.main-part{
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    background: #fff;
+    margin: 50px auto;
+    padding: 50px; 
+}
+
+/* Main paet */
+.features{
+	.moving-icon{
+			width: 60px;
+			height: 30px;
+			overflow: hidden;
+			display: inline-block;
+			vertical-align: middle;
+			.white-icon {
+    			color: #fff !important;
+			}
+			.black-icon {
+    			color: @default_color !important;
+			}
+		}
+	.single-features{
+		transition: all .5s;
+		border: 1px solid #FCFCFC;
+		min-height: 110px;
+
+		&:nth-child(2){
+			border-left: none;
+			border-right: none;
+		}
+		i{
+		transition: left .5s;
+		position: relative;
+		left: 0;
+		}
+	}
+	.single-features:hover{
+		color: #fff;
+		background-color: @default_color;
+		i{
+			left: -30px;
+		}
+	}
+}
+.emal-info{
+	font-size: 1.5rem;
+	margin-top: 75px;
+	margin-bottom: 25px;
+	border-top: 1px solid #FCFCFC;
+	border-bottom: 1px solid #FCFCFC;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.envelope-icon{
+		padding-top: 8px;
+	}
+	.email-text{
+		padding-top: 3px;
+	}
+	
+}
+.meels-image{
+	.single-meel{
+		h4{
+			color: @active_color;
+		}
+	.image-with-hover{
+		position: relative;
+		overflow: hidden;
+		img{
+			width: 300px;
+			height: 200px;
+		}
+		.hover-helper{
+			position: absolute;
+			top:0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background: #000;
+			opacity: 0.2;
+			visibility: hidden;
+			
+		}
+		&:hover{
+			.hover-helper{
+				visibility: visible;
+				transform: rotate(30deg);
+				transition: all 0.2s;
+			}
+			h4{
+				color: @text_color;
+				transition: all 0.2s;
+			}
+		}
+	}
+	&:hover{
+		h4{
+			color: @text_color;
+			transition: all 0.2s;
+		}
+	}
+}
+}
+#carousel-example-generic {
+    width: 104%;
+    margin-left: -2%;
+    	.customer-indicators {
+    		bottom: 0;
+    		text-align: right;
+    		left: 65%;
+    		li{
+    			background-color: #fff;
+    			height: 15px;
+    			width: 15px;
+    		}
+    		img{
+    			margin-right: 0;
+    			width: 800px;
+    			height: 350px;
+    		}
+    		.active{
+    			background-color: @active_color;
+    			border-color: @active_color;
+    		}
+		}
+	.item1{}
+}
+footer{
+	color: @text_color;
+	.left-side-column{
+		padding: 5px;
+	}
+	.social{
+		display: inline-block;
+		color: #fff;
+		width: 50px;
+    	height: 50px;
+    	border: 5px solid @active_color;
+    	background-color: @active_color;
+    	border-radius: 25px;
+    	text-align: center;
+    	padding: 5px;
+    	margin-right: 2%;
+    	&:hover{
+    		background-color: #fff;
+    		color: @active_color;
+    		transition: background-color 800ms, color 800ms;
+    	}
+	}
+}

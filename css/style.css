@@ -1,0 +1,228 @@
+body {
+  background: url('../img/back-global.jpg');
+  color: #212121;
+  font-family: 'Lato', sans-serif;
+}
+p {
+  color: #b5b5b5;
+  text-align: center;
+}
+.wrapper-ie {
+  display: none;
+}
+.main-menu {
+  list-style-type: none;
+  font-size: 2rem;
+}
+.main-menu li {
+  position: relative;
+}
+.main-menu li:after {
+  content: "";
+  width: 0;
+  border-bottom: 1px solid #d57d39;
+  position: absolute;
+  transition: width 500ms;
+}
+.main-menu li:hover:after {
+  width: 100%;
+}
+.main-menu li a {
+  text-decoration: none;
+  color: #212121;
+  line-height: 7rem;
+  display: block;
+}
+.main-menu li a:hover {
+  color: #d57d39;
+}
+.main-menu li a.active {
+  color: #d57d39;
+  border-bottom: 1px solid #d57d39;
+}
+.latest-news {
+  padding-left: 20px;
+  color: #B5B5B5;
+}
+.latest-news h2 {
+  color: #CC9933;
+  border-bottom: 1px solid #CC9933;
+  padding-bottom: 15px;
+}
+.latest-news .panel-default {
+  border-color: transparent;
+}
+.latest-news .panel-default .panel-heading {
+  border-color: #fff;
+}
+.latest-news .panel-default .panel-heading a {
+  text-decoration: none;
+}
+.latest-news .panel-default .panel-heading a i {
+  margin-right: 15px;
+}
+.latest-news .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: transparent;
+}
+.latest-news .btn-learn-more {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding: 5px 30px;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.latest-news .btn-learn-more:hover {
+  border-color: #d57d39;
+  transition: border-color 500ms;
+}
+.latest-news .btn-learn-more a {
+  text-decoration: none;
+  color: #ccc;
+}
+.latest-news .btn-learn-more a:hover {
+  color: #d57d39;
+  transition: color 500ms;
+}
+.latest-news .benefits p {
+  color: #ccc;
+  text-align: left;
+}
+.main-part {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  background: #fff;
+  margin: 50px auto;
+  padding: 50px;
+}
+/* Main paet */
+.features .moving-icon {
+  width: 60px;
+  height: 30px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+.features .moving-icon .white-icon {
+  color: #fff !important;
+}
+.features .moving-icon .black-icon {
+  color: #212121 !important;
+}
+.features .single-features {
+  transition: all .5s;
+  border: 1px solid #FCFCFC;
+  min-height: 110px;
+}
+.features .single-features:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+.features .single-features i {
+  transition: left .5s;
+  position: relative;
+  left: 0;
+}
+.features .single-features:hover {
+  color: #fff;
+  background-color: #212121;
+}
+.features .single-features:hover i {
+  left: -30px;
+}
+.emal-info {
+  font-size: 1.5rem;
+  margin-top: 75px;
+  margin-bottom: 25px;
+  border-top: 1px solid #FCFCFC;
+  border-bottom: 1px solid #FCFCFC;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.emal-info .envelope-icon {
+  padding-top: 8px;
+}
+.emal-info .email-text {
+  padding-top: 3px;
+}
+.meels-image .single-meel h4 {
+  color: #d57d39;
+}
+.meels-image .single-meel .image-with-hover {
+  position: relative;
+  overflow: hidden;
+}
+.meels-image .single-meel .image-with-hover img {
+  width: 300px;
+  height: 200px;
+}
+.meels-image .single-meel .image-with-hover .hover-helper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.2;
+  visibility: hidden;
+}
+.meels-image .single-meel .image-with-hover:hover .hover-helper {
+  visibility: visible;
+  transform: rotate(30deg);
+  transition: all 0.2s;
+}
+.meels-image .single-meel .image-with-hover:hover h4 {
+  color: #b5b5b5;
+  transition: all 0.2s;
+}
+.meels-image .single-meel:hover h4 {
+  color: #b5b5b5;
+  transition: all 0.2s;
+}
+#carousel-example-generic {
+  width: 104%;
+  margin-left: -2%;
+}
+#carousel-example-generic .customer-indicators {
+  bottom: 0;
+  text-align: right;
+  left: 65%;
+}
+#carousel-example-generic .customer-indicators li {
+  background-color: #fff;
+  height: 15px;
+  width: 15px;
+}
+#carousel-example-generic .customer-indicators img {
+  margin-right: 0;
+  width: 800px;
+  height: 350px;
+}
+#carousel-example-generic .customer-indicators .active {
+  background-color: #d57d39;
+  border-color: #d57d39;
+}
+footer {
+  color: #b5b5b5;
+}
+footer .left-side-column {
+  padding: 5px;
+}
+footer .social {
+  display: inline-block;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #d57d39;
+  background-color: #d57d39;
+  border-radius: 25px;
+  text-align: center;
+  padding: 5px;
+  margin-right: 2%;
+}
+footer .social:hover {
+  background-color: #fff;
+  color: #d57d39;
+  transition: background-color 800ms, color 800ms;
+}
